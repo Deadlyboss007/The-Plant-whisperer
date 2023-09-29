@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Plant Whisperer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #EDF1D6;
+            color: azure;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: black;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: azure;
+        }
+
+        nav ul li a:hover {
+            color: palevioletred;
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+
+
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(0, 0, 0);
+            height: 1.2px;
+            margin: 44px 84px;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px 0;
+
+
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            color: #9DC08B;
+            font-size: 2rem;
+            margin: 70px 0;
+        }
+
+        .rightsection img {
+            /* background-color: red; */
+            width: 80%;
+            margin: 30px;
+        }
+
+        /* Add this CSS to your existing stylesheet */
+        .rightsection .hover-effect {
+            -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+            -webkit-transition: .5s ease-in-out;
+            transition: .5s ease-in-out;
+        }
+
+        .rightsection:hover .hover-effect {
+            -webkit-transform: scale(1.0);
+            transform: scale(1.0);
+        }
+
+
+        .purple {
+            color: rgb(0, 2, 3);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .footer {
+            display: flex;
+            background-color: #40513B;
+            height: 233px;
+            padding: 23px 122px;
+        }
+
+        .thirdsection {
+            padding-left: 50px;
+            padding-right: 50px;
+            height: 250px;
+        }
+
+        .fourthsection {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left flex flex-row">
+                
+                <h1>Plant Whisperer</h1>
+            </div>
+            <div class="right">
+                <ul>
+                    <li> <a href="/">Home </a></li>
+                    <li> <a href="/">about</a></li>
+                    <li> <a href="/">services</a></li>
+                    <li> <a href="page.html">Analytics</a></li>
+                    <li> <a href="/">contact me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection ">
+            <div class="leftsection">Hi, I am <span class="purple ">The Plant Whisperer</span>
+                <div class="color-[#9DC08B]">I can
+                    <div class="purple"><span id="element"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img class="hover-effect" src="12.svg" alt="developer picture">
+            </div>
+
+        </section>
+        <div>
+            <section class="thirdsection bg-[#609966] py-16" id="features">
+                <div class="container mx-auto">
+                    <div class="flex flex-col lg:flex-row items-center">
+                       
+                        <div class="lg:w-3/5 mt-10 lg:mt-0">
+                            <div class="text-center lg:text-left">
+                                <h2 class="text-3xl font-semibold mb-4">Controlled-Environment Agriculture</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <hr class="border-t-2 border-gray-300">
+                    </div>
+                </div>
+            </section>
+            <!-- 2nd work point-->
+            <section class="fourthsection bg-[#609966] py-16">
+                <div class="container mx-auto">
+                    <div class="flex flex-col lg:flex-row items-center">
+                        <div class="lg:w-3/5 lg:pr-16 mt-10 lg:mt-0">
+                            <div class="text-center lg:text-left">
+                                <h2 class="text-3xl font-semibold mb-4">Communication at plant level</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+        <!-- <hr>
+        <section class="sencondsection">
+            <span class="text-grey">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box"></div>
+        </section> -->
+    </main>
+    <footer>
+        <div class="footer">
+
+            <div class="flex flex-col space-y-8">
+
+                <div class="first mr-8">
+                    <h1 class="text-2xl text-[#9DC08B] font-semibold">Contact us here</h1>
+                </div>
+
+                <div class="second">
+                    <h4
+                        class="text-white text-base hover:text-xl transform scale-100 hover:scale-110 hover:text-[#DB7093] transition-transform">
+                        Help</h4>
+                </div>
+
+
+                <div class="third">
+                    <h4
+                        class="text-white text-base hover:text-[#DB7093] hover:text-xl transform scale-100 hover:scale-110 transition-transform">
+                        Services</h4>
+                </div>
+                <div class="fourth">
+                    <h4
+                        class="text-white text-base hover:text-xl hover:text-[#DB7093] transform scale-100 hover:scale-110 transition-transform">
+                        About</h4>
+                </div>
+            </div>
+            <div class="flex justify-end items-start">
+                <div class="ml-2">
+                    <input type="text" class="rounded-2xl border-gray-800 border-2 p-1" placeholder="Enter email">
+                    <button
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-normal py-1 px-4 rounded-2xl ml-2">Submit</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Element to contain animated typing -->
+
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['understand your plant', ' talk to your plant', 'protect your plant'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
