@@ -9,145 +9,142 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        body {
-            background-color: white;
-            color: azure;
-            font-family: 'Poppins', sans-serif;
-
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: black;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: azure;
-        }
-
-        nav ul li a:hover {
-            color: palevioletred;
-            font-size: 1.04rem;
-        }
-
-        .card {
-  box-sizing: border-box;
-  height: 270px;
-  width: 450px;
-  background: rgba(217, 217, 217, 0.58);
-  border: 1px solid white;
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
-  backdrop-filter: blur(6px);
-  border-radius: 17px;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.5s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
-  font-weight: bolder;
-  color: black;
-}
-
-.card:hover {
-  border: 1px solid black;
-  transform: scale(1.05);
-}
-
-.card:active {
-  transform: scale(0.95) rotateZ(1.7deg);
-}
-    </style>
 </head>
 
-<body class="bg-[#597d4f]">
+<body class="bg-[#D3E1C7]">
     <header>
-        <nav>
+        <nav class="w-full">
             <div class="left">Plant Whisperer</div>
             <div class="right">
                 <ul>
-                    <li> <a href="/">Home </a></li>
-                    <li> <a href="/">about</a></li>
-                    <li> <a href="/">services</a></li>
-                    <li> <a href="./analytics.html">analytics</a></li>
-                    <li> <a href="/">contact me</a></li>
+                    <li> <a href="/index.html">Home </a></li>
+                    <li> <a href="/">About</a></li>
+                    <li> <a href="The_Plant_Whisperer-main/analytics.html">Analytics</a></li>
+                    <li> <a href="#contact1">Contact Us</a></li>
 
                 </ul>
             </div>
         </nav>
     </header>
 
-    <h1 class="text-6xl text-black pt-8 pl-8 font-semibold hover:drop-shadow-2xl hover:drop-shadow-cyan-900 ">Your Analytics</h1>
-        <div class="flex flex-row mx-12 mt-24">    
-            <div class="card">
-                <img src="./ply.jpg" class="h-full w-full rounded-xl ">
+    <h1 class="text-6xl text-black pt-24 pl-8 mx-auto font-semibold hover:drop-shadow-2xl hover:drop-shadow-cyan-900 ">
+        Your
+        Analytics</h1>
+
+
+    <div class="flex flex-col ml-64 my-12  ml-12">
+
+        <div class="space-y-8 z-[-1]">
+            <div class="card fade-in  ">
+                <img src="./ply.jpg" class="h-full w-full rounded-xl">
             </div>
-            <div class="ml-4 my-auto">
-                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Species:</span> Plymouth Pear (Pyrus Cordata)</h3>
-                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Disease/Deficiency:</span> Fire Blight</h3>
-                <h3 class="text-2xl"><span class="text-2xl text-black font-semibold">Caused by:</span> Erwinia amylovora</h3>
-                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Atmosphere: </span>Humidity->0.65,Temperature-> 28,Luminosity-> 0.874</h3>
-                <h3 class="text-2xl"><span class="text-2xl text-black font-semibold">VOCs detected: </span> Ethylene(7.773), Alkenes(1.5327), Terpenoids (0.012])
+
+
+            <div class="ml-4 my-auto fade-in mx-auto">
+                <h3 class="text-2xl text-gray"><span class="text-3xl text-black font-semibold">Species:</span> Plymouth
+                    Pear
+                    (Pyrus
+                    Cordata)</h3>
+                <h3 class="text-2xl text-gray"><span
+                        class="text-3xl text-black font-semibold">Disease/Deficiency:</span> Fire
+                    Blight
                 </h3>
-                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Aggregate Health factor:</span> 0.73 </h3>
-                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Aggregate State of Plant:</span> Diseased</h3>
+                <h3 class="text-2xl text-gray"><span class="text-3xl text-black font-semibold">Caused by:</span> Erwinia
+                    amylovora
+                </h3>
+                <h3 class="text-2xl text-gray"><span class="text-3xl text-black font-semibold">Atmosphere:
+                    </span>Humidity->0.65,Temperature-> 28,Luminosity-> 0.874</h3>
+                <h3 class="text-2xl text-gray"><span class="text-3xl text-black font-semibold">VOCs detected: </span>
+                    Ethylene(7.773),
+                    Alkenes(1.5327), Terpenoids (0.012])
+                </h3>
+                <h3 class="text-2xl text-gray"><span class="text-3xl text-black font-semibold">Aggregate Health
+                        factor:</span>
+                    0.73
+                </h3>
+                <h3 class="text-2xl text-gray"><span class="text-3xl text-black font-semibold">Aggregate State of
+                        Plant:</span>
+                    Diseased</h3>
             </div>
         </div>
+    </div>
 
-        <!-- <div class="flex flex-row mx-12 mt-24">    
-            <div class="card">
-                <img src="./ply.jpg" class="h-full w-full rounded-xl ">
+
+
+
+
+
+
+
+    <footer id="contact1">
+        <div class="footer">
+
+            <div class="flex flex-col space-y-8">
+
+                <div class="first mr-8">
+                    <h1 class="text-2xl text-[#9DC08B] font-semibold">Contact us here</h1>
+                </div>
+
+                <div class="second">
+                    <h4
+                        class="text-white text-base hover:text-xl transform scale-100 hover:scale-110 hover:text-[#DB7093] transition-transform">
+                        Help</h4>
+                </div>
+
+
+                <div class="third">
+                    <h4
+                        class="text-white text-base hover:text-[#DB7093] hover:text-xl transform scale-100 hover:scale-110 transition-transform">
+                        Services</h4>
+                </div>
+                <div class="fourth">
+                    <h4
+                        class="text-white text-base hover:text-xl hover:text-[#DB7093] transform scale-100 hover:scale-110 transition-transform">
+                        About</h4>
+                </div>
             </div>
-            <div class="ml-4 my-auto">
-                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Species:</span> Plymouth Pear (Pyrus Cordata)</h3>
-                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Disease/Deficiency:</span> Fire Blight</h3>
-                <h3 class="text-2xl"><span class="text-2xl text-black font-semibold">Caused by:</span> Erwinia amylovora</h3>
-                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Atmosphere: </span>Humidity->0.65,Temperature-> 28,Luminosity-> 0.874</h3>
-                <h3 class="text-2xl"><span class="text-2xl text-black font-semibold">VOC's </span>detected: Ethylene(7.773), Alkenes(1.5327), Terpenoids (0.012])
-                </h3>
-                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Aggregate Health factor:</span> 0.73 </h3>
-                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Aggregate State of Plant:</span> Diseased</h3>
+            <div class="flex justify-end items-start">
+                <div class="ml-2">
+                    <input type="text" class="rounded-2xl border-gray-800 border-2 p-1" placeholder="Enter email">
+                    <button
+                        class="bg-blue-500 hover:bg-blue-700 text-white font-normal py-1 px-4 rounded-2xl ml-2">Submit</button>
+                </div>
             </div>
         </div>
+    </footer>
 
-        <div class="flex flex-row mx-12 mt-24">    
-            <div class="card">
-                <img src="./ply.jpg" class="h-full w-full rounded-xl ">
-            </div>
-            <div class="ml-4 my-auto">
-                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Species:</span> Plymouth Pear (Pyrus Cordata)</h3>
-                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Disease/Deficiency:</span> Fire Blight</h3>
-                <h3 class="text-2xl"><span class="text-2xl text-black font-semibold">Caused by:</span> Erwinia amylovora</h3>
-                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Atmosphere: </span>Humidity->0.65,Temperature-> 28,Luminosity-> 0.874</h3>
-                <h3 class="text-2xl"><span class="text-2xl text-black font-semibold">VOC's </span>detected: Ethylene(7.773), Alkenes(1.5327), Terpenoids (0.012])
-                </h3>
-                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Aggregate Health factor:</span> 0.73 </h3>
-                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Aggregate State of Plant:</span> Diseased</h3>
-            </div>
-        </div> -->
+    <script>
+        // Function to check if an element is in the viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
 
+        // Function to handle the scroll event
+        function handleScroll() {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach((element) => {
+                if (isInViewport(element)) {
+                    element.classList.add('visible');
+                }
+            });
+        }
 
-        
-    </body>
-    </html>
+        // Add an event listener to trigger the animation on scroll
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', handleScroll);
+
+        // Initial check on page load
+        handleScroll();
+
+    </script>
+</body>
+
+</html>

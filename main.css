@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #176B87;
+    color: azure;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    overflow: hidden;
+    background-color: #dbe4de;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: azure;
+}
+
+nav ul li a:hover {
+    color: palevioletred;
+    font-size: 1.04rem;
+}
+
+.left {
+    font-size: 1.5rem;
+
+
+}
+
+main hr {
+    border: 0;
+    background: rgb(0, 0, 0);
+    height: 1.2px;
+
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+}
+
+.firstsection>div {
+    width: 30%;
+}
+
+.leftsection {
+    color: black;
+
+}
+
+.leftsection span {
+    color: #C70039;
+}
+
+.ican {
+    color: #C70039;
+}
+
+.rightsection img {
+    /* background-color: red; */
+    width: 80%;
+    margin: 30px;
+    border-radius: 40px;
+}
+
+/* Add this CSS to your existing stylesheet */
+.rightsection .hover-effect {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+.rightsection:hover .hover-effect {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+}
+
+
+.purple {
+    color: rgb(0, 2, 3);
+}
+
+.text-gray {
+    color: gray;
+}
+
+.secondsection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80;
+}
+
+.secondsection h1 {
+    font-size: 1.9rem;
+}
+
+.footer {
+    display: flex;
+    background-color: #001808;
+    height: 233px;
+    padding: 23px 122px;
+}
+
+.thirdsection {
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 250px;
+}
+
+.fourthsection {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    color: azure;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: black;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: azure;
+}
+
+nav ul li a:hover {
+    color: palevioletred;
+    font-size: 1.04rem;
+}
+
+.card {
+    box-sizing: border-box;
+    height: 270px;
+    width: 450px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+}
+
+.card:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
