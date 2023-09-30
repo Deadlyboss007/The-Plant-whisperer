@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Plant Whisperer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: white;
+            color: azure;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: black;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: azure;
+        }
+
+        nav ul li a:hover {
+            color: palevioletred;
+            font-size: 1.04rem;
+        }
+
+        .card {
+  box-sizing: border-box;
+  height: 270px;
+  width: 450px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+    </style>
+</head>
+
+<body class="bg-[#597d4f]">
+    <header>
+        <nav>
+            <div class="left">Plant Whisperer</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="/">Home </a></li>
+                    <li> <a href="/">about</a></li>
+                    <li> <a href="/">services</a></li>
+                    <li> <a href="./analytics.html">analytics</a></li>
+                    <li> <a href="/">contact me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h1 class="text-6xl text-black pt-8 pl-8 font-semibold hover:drop-shadow-2xl hover:drop-shadow-cyan-900 ">Your Analytics</h1>
+        <div class="flex flex-row mx-12 mt-24">    
+            <div class="card">
+                <img src="./ply.jpg" class="h-full w-full rounded-xl ">
+            </div>
+            <div class="ml-4 my-auto">
+                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Species:</span> Plymouth Pear (Pyrus Cordata)</h3>
+                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Disease/Deficiency:</span> Fire Blight</h3>
+                <h3 class="text-2xl"><span class="text-2xl text-black font-semibold">Caused by:</span> Erwinia amylovora</h3>
+                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Atmosphere: </span>Humidity->0.65,Temperature-> 28,Luminosity-> 0.874</h3>
+                <h3 class="text-2xl"><span class="text-2xl text-black font-semibold">VOCs detected: </span> Ethylene(7.773), Alkenes(1.5327), Terpenoids (0.012])
+                </h3>
+                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Aggregate Health factor:</span> 0.73 </h3>
+                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Aggregate State of Plant:</span> Diseased</h3>
+            </div>
+        </div>
+
+        <!-- <div class="flex flex-row mx-12 mt-24">    
+            <div class="card">
+                <img src="./ply.jpg" class="h-full w-full rounded-xl ">
+            </div>
+            <div class="ml-4 my-auto">
+                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Species:</span> Plymouth Pear (Pyrus Cordata)</h3>
+                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Disease/Deficiency:</span> Fire Blight</h3>
+                <h3 class="text-2xl"><span class="text-2xl text-black font-semibold">Caused by:</span> Erwinia amylovora</h3>
+                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Atmosphere: </span>Humidity->0.65,Temperature-> 28,Luminosity-> 0.874</h3>
+                <h3 class="text-2xl"><span class="text-2xl text-black font-semibold">VOC's </span>detected: Ethylene(7.773), Alkenes(1.5327), Terpenoids (0.012])
+                </h3>
+                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Aggregate Health factor:</span> 0.73 </h3>
+                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Aggregate State of Plant:</span> Diseased</h3>
+            </div>
+        </div>
+
+        <div class="flex flex-row mx-12 mt-24">    
+            <div class="card">
+                <img src="./ply.jpg" class="h-full w-full rounded-xl ">
+            </div>
+            <div class="ml-4 my-auto">
+                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Species:</span> Plymouth Pear (Pyrus Cordata)</h3>
+                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Disease/Deficiency:</span> Fire Blight</h3>
+                <h3 class="text-2xl"><span class="text-2xl text-black font-semibold">Caused by:</span> Erwinia amylovora</h3>
+                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Atmosphere: </span>Humidity->0.65,Temperature-> 28,Luminosity-> 0.874</h3>
+                <h3 class="text-2xl"><span class="text-2xl text-black font-semibold">VOC's </span>detected: Ethylene(7.773), Alkenes(1.5327), Terpenoids (0.012])
+                </h3>
+                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Aggregate Health factor:</span> 0.73 </h3>
+                <h3 class="text-2xl "><span class="text-2xl text-black font-semibold">Aggregate State of Plant:</span> Diseased</h3>
+            </div>
+        </div> -->
+
+
+        
+    </body>
+    </html>
